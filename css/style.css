@@ -1,0 +1,326 @@
+/* */
+
+img {
+	border-style: none;
+	border-width: 0;
+}
+body {
+	background-image: url("../img/sumtextb.jpg");
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#header {
+	margin-top: 70px;
+}
+
+#header h1 {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16pt; 
+	color: #0000A0;
+}
+
+#header h2 {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14pt; 
+	color: black;
+}
+
+#header h3 {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12pt; 
+	color: black;
+}
+
+#esercitazione a:link,
+#esercitazione a:visited,
+#esercitazione a:active,
+#author a:link,
+#author a:visited,
+#author a:active,
+#menu a:link,
+#menu a:visited,
+#menu a:active,
+#footer a:link,
+#footer a:visited,
+#footer a:active {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	color: #0066cc;
+	text-decoration:none; 
+}
+#esercitazione a:hover, 
+#author a:hover, 
+#menu a:hover, 
+#footer a:hover {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	color: #0066cc;
+	text-decoration: underline; 
+}
+
+#footer {
+	margin-top:  20px;
+	padding-top:  5px;
+	border-top: 1px solid #666;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+	font-weight: normal;
+	color: silver;
+	text-align: center;
+}
+
+#author {	
+	margin-left: 30%;
+	padding-top: 30px;
+	text-align: left;
+}
+
+#author .label {	
+	width: 84px;	
+	font-weight: normal;		
+}
+
+#author .description {	
+	font-weight: normal;
+}
+
+#menu {
+	padding-top: 50px;
+	margin-left: 30%;
+	text-align: left;
+}
+
+#author ul,
+#menu ul {
+	list-style-type: none;   
+	line-height: 1.5;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+}
+
+li .bullet {
+	padding-right: 5px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+	color: #800000;
+}
+
+.programma {
+	margin-top: 50px;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 700px;
+}
+
+.programma .titolo {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+}
+
+.materiale {
+	margin-top: 50px;
+}
+
+.materiale .titolo {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+}
+
+.esame {
+	margin-top: 50px;
+}
+
+.esame .titolo {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+}
+
+.programma ol {
+	list-style-type: lower-roman;   
+	line-height: 1.5;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+}
+
+.materiale ul {
+	list-style-type: square;   
+	line-height: 1.5;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+}
+
+#esercitazione {
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 700px;
+}
+
+#esercitazione .titolo {
+	margin-top: 50px;
+	text-align: left;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+}
+
+p {
+	text-align: justify;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+}
+
+.sezione {
+	text-align: center;
+}
+
+.sezione table caption {
+	text-align: left;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 650px;
+}
+
+.sezione table {
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 650px;
+}
+
+.sezione .titolo {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 12pt; 
+	font-weight: bold;
+	color: #FFFFFF; 
+    background-color: #000080;
+    width: 100%;
+}
+
+table.avvisi {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+    vertical-align: top;
+    margin-left: auto; 
+	margin-right: auto; 
+	width: 750px;
+}
+
+.avvisi caption {
+	text-align: left;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 750px;
+}
+
+.avvisi .label {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #003366; 
+    background-color: #FDEBB5; 
+    vertical-align: top;
+    width: 100%;
+}
+
+/** Tabella con stile "Muted" */
+
+table {
+	border-collapse: collapse;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+caption {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	text-align: left;
+	text-transform: uppercase;
+}
+th, td {
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	padding: 0.6em;
+	vertical-align: 4px;
+}
+th {
+	text-align: left;
+	text-transform: uppercase;
+}
+thead th, tfoot th, tfoot td {
+	background-color: #cc9;
+	font-size: 1.1em;
+}
+tbody th {
+	background: url(../img/bullet_vacancy.gif) no-repeat 6px 0.8em ;
+	padding-left: 24px;
+}
+tbody th, td {
+	background-color:#eee;
+}
+tbody tr:hover td, tbody tr:hover th {
+	background-color: #E5E5CB;
+}
+tr.odd td, tr.odd th {
+	background-color: #ddd;
+}
+tbody a {
+	color: #333;
+}
+tbody a:visited {
+	color: #999999;
+}
+tbody a:hover {
+	color: #33c;
+}
+tbody a:active {
+	color: #33c;
+}
+
+/** mostra sul secondo td l'immagine..
+tbody td+td a {
+	background: url(../img/external.gif) no-repeat right 0.4em;
+	padding-right: 12px;
+}
+*/
+
+tfoot th {
+	text-align: right;
+}
+tfoot th:after {
+	content: ":";
+}
+
+
+/*
+
+table, td, th{border:1px solid #EEE;border-collapse:collapse}
+td,th{padding:3px 5px}
+td{text-align:right}
+th{text-align:left}
+tr.odd td,tr.odd th{background: #D5E4FF}
+caption{font-weight:bold;color: #999}
+
+*/
+    

@@ -1,0 +1,80 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="Autor" content="GMORO">
+    <title>Programmazione di Applicazioni Data Intensive :: Avvisi</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/page_filler.js"></script>
+</head>
+
+<body onload="init()">
+	<div id="header">
+		<h1 id="titolo1">Programmazione di Applicazioni Data Intensive (A.A. 2015/2016)</h1>
+		<h2 id="titolo2">Laurea Triennale in Ingegneria e Scienze Informatiche</h2>
+        <h3 id="titolo3">Dipartimento di Informatica - Scienza e Ingegneria, sede di Cesena</h3>
+        <h3 id="titolo4">Università  degli Studi di Bologna</h3>
+	</div> 
+	
+	<br><br>
+	
+	<table class="avvisi">
+   		<caption>Esami:</caption>
+   			<col width="60px">
+		<tbody>
+			
+			<tr>				
+				
+				<th scope="row"><strong>Appelli esami:</strong></th>
+				<td> <ul><li>22/06/2016 15:30</li>
+					<li>21/07/2016 15:30</li>
+					<li>16/09/2016 15:30</li></ul>
+					La prova orale verte su domande riguardanti il programma svolto, insieme a una discussione sul progetto presentato. Le prove orali si terranno presso lo studio 14 in via sacchi n.3.
+				</td>
+				
+			</tr>
+			<tr>				
+				
+				<th scope="row"><strong>Istruzioni:</strong></th>
+				<td> La consegna preliminare dei progetti deve avvenire via dropbox o google drive con almeno 5 giorni di anticipo rispetto la data dell'esame, includendo quanto segue:
+					<ul><li>sorgenti documentati ed eseguibili, dati/db usati, riferimenti alle librerie etc., corredati con tutto l'occorrente per eseguirli e testarne il funzionamento;</li>
+
+					<li>relazione scritta contenente i requisiti e le funzionalità del software sviluppato, su quali argomenti del corso si basa il progetto, tecnologie e librerie impiegate, architettura del software sviluppato, le scelte progettuali operate con relative motivazioni (e.g. algoritmi, metodi, classi, relazioni, orm etc.), valutazioni dell'efficacia ed efficienza delle funzionalità software sviluppate (e.g. complessità computazionale delle parti ritenute più critiche, se si usa recommendation calcolare l'efficacia con RMSE etc.) e infine riportare le istruzioni per configurare, eseguire e testare il software.</li></ul>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><strong>Proposte di progetto:</strong></th>
+				<td> Di seguito alcune proposte/linee guida, per possibili progetti:
+					<ul>					
+					<li>Applicazione/gestionale per una scuola di lezioni private. Il modello deve prevedere studenti che si iscrivono a corsi, ognuno dei quali è tenuto da un insegnante. L'app web deve prevedere l'accesso per le due tipologie di utente e poter gestire la prenotazione/modifica/cancellazione delle lezioni. Inoltre può essere utile gestire uno storico dei pagamenti effettuati dagli studenti.</li>
+					<li>Applicazione/gestionale per una flotta di autotrasporti. L'app web deve prevedere una parte logistica, che definisce i viaggi che un autista deve effettuare, e una parte relativa agli autisti, i quali controllano le tratte da effettuare (e quelle effettuate) tramite il portale web. </li>
+					<li>Applicazione di feature genomiche. Qualsiasi gene o proteina di ciascun organismo ha una o più funzioni, i biologi mantengono annotate le funzioni genomiche con ontologie di funzioni (la più utilizzata è Gene Ontology http://geneontology.org/ ), generando così matrici Gene-Funzione. Creare una applicazione Web che mostri le annotazioni conosciute per un certo gene di un certo organismo e che, tramite algoritmi di recommendation, proponga nuove annotazioni mancanti in base alla matrice conoscita (in maniera analoga delle utility matrix della normale recommendation di Prodotti per un estore). </li>
+					<li>
+						Webapp per la gestione di preventivi e fatture. L'utente inserisce il catalogo dei prodotti/servizi (entità) con i relativi prezzi e le relative categorie di appartenenza (altra entità). L'inserimento/modifica/cancellazione dei preventivi o fatture è analoga (medesima entità con attributo tipo = preventivo o fattura): <br>
+						1) si inseriscono le informazioni di testata in un entità come nome cliente o ragione sociale, partita iva o codice fiscale, indirizzo, eventuale banca di appoggio, modalità di pagamento, campo note, data documento, numero documento univoco per preventivi e distinto e univoco per fatture; <br>
+						2) si inseriscono una o più righe di prodotti servizi nel preventivo o fattura, altra entità, dove ogni riga contiene num. riga, quantità, codice prodotto, descrizione, aliquota IVA, importo IVA esclusa che l'utente qui può modificare rispetto al prezzo inserito nel catalogo senza alterare il prezzo sul catalogo;<br>
+						3) a fine fattura o preventivo i campi calcolati, ossia i vari totali imponibili (IVA esclusi) per ciascuna aliquota IVA inserita nelle righe, le varie IVA, e totali corrispondenti alle somme imponibili + l'IVA relativa, infine il totale generale che riunisce tutti i totali. <br>
+						Un preventivo può essere convertito in una fattura semplicemente aprendolo e cambiando il campo tipo documento. 
+						Il preventivo a differenza della fattura deve prevedere nella stampa uno spazio a fine documento dove il cliente "firma per accettazione". <br>
+						L'app web deve fornitore funzioni di stampa dei documenti anche di più pagine facendo in modo che l'area in alto nel documento contente i dati del venditore (ragione sociale, partiva IVA, iscrizione camera di commercio, iban, indirizzo, telefono, email, fax ed una frase slogan, siano modificabili dall'utente amministratore. 
+						Infine l'amministratore deve potete visualizzare delle statistiche di base, come il totale dei preventivi o fatture  fissando un intervallo di date, i prodotti più venduti ordinati in modo decrescente sulle vendite, etc. <br>
+						L'utente ovviamente deve poter cercare rapidamente un singolo preventivo o fattura, ad esempio inserendo come campo di ricerca il nome del cliente e/o la data e/o il numero documento e/o il tipo documento (fattura o preventivo). <br>
+						Si potrebbe aggiungere un modulo di recommendation per fornire suggerimenti a chi compila preventivi.
+					</li>
+					</ul>
+				</td>
+				
+			</tr>
+
+		</tbody>
+	</table>
+    
+    <div id="footer">		
+   		<a href="index.html">Torna alla Home</a>
+	</div>
+
+</body>
+
+</html>
